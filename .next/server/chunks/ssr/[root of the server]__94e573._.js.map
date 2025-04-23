@@ -1,0 +1,11 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 87, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/Mark/weather-app/src/app/%28pages%29/dashboard/page.tsx"],"sourcesContent":["import { useEffect, useState } from \"react\"\r\nimport axios from \"axios\"\r\n\r\nexport default function Dashboard() {\r\nconst WEATHER_API = \"http://localhost:5000/get-weather?city=Bulacan\"\r\n\r\n    const [weather, setWeather] = useState(null);\r\n\r\n    const getWeather = async () => {\r\n        try {\r\n            const response = await axios.get(WEATHER_API);\r\n            setWeather(response.data)\r\n        } catch (error) {\r\n            \r\n        }\r\n    }\r\n    useEffect(() => {\r\n        getWeather();\r\n    },[])\r\n\r\n    return(\r\n        <div>\r\n           {weather}\r\n        </div>\r\n    )\r\n}"],"names":[],"mappings":";;;;AAAA;AACA;;;;AAEe,SAAS;IACxB,MAAM,cAAc;IAEhB,MAAM,CAAC,SAAS,WAAW,GAAG,CAAA,GAAA,qMAAA,CAAA,WAAQ,AAAD,EAAE;IAEvC,MAAM,aAAa;QACf,IAAI;YACA,MAAM,WAAW,MAAM,qIAAA,CAAA,UAAK,CAAC,GAAG,CAAC;YACjC,WAAW,SAAS,IAAI;QAC5B,EAAE,OAAO,OAAO,CAEhB;IACJ;IACA,CAAA,GAAA,qMAAA,CAAA,YAAS,AAAD,EAAE;QACN;IACJ,GAAE,EAAE;IAEJ,qBACI,8OAAC;kBACG;;;;;;AAGZ"}},
+    {"offset": {"line": 116, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 122, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/Mark/weather-app/src/app/page.tsx"],"sourcesContent":["import Image from \"next/image\";\nimport Dashboard from \"@/app/(pages)/dashboard/page\"\n\nexport default function Home() {\n  return (\n   <Dashboard/>\n  );\n}\n"],"names":[],"mappings":";;;;AACA;;;AAEe,SAAS;IACtB,qBACC,8OAAC,6IAAA,CAAA,UAAS;;;;;AAEb"}},
+    {"offset": {"line": 136, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 147, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":""}},
+    {"offset": {"line": 147, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
