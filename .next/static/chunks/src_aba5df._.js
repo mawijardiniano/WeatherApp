@@ -1,4 +1,4 @@
-(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push(["static/chunks/src_afacd4._.js", {
+(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push(["static/chunks/src_aba5df._.js", {
 
 "[project]/src/lib/utils.ts [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
@@ -458,15 +458,705 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_refresh__.registerExports(module, globalThis.$RefreshHelpers$);
 }
 }}),
-"[project]/src/app/(pages)/dashboard/page.tsx [app-client] (ecmascript)": (function(__turbopack_context__) {
+"[project]/src/components/ui/clock.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
 
-var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, k: __turbopack_refresh__, m: module, e: exports, t: __turbopack_require_real__ } = __turbopack_context__;
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, k: __turbopack_refresh__, m: module, z: __turbopack_require_stub__ } = __turbopack_context__;
 {
-const e = new Error(`Could not parse module '[project]/src/app/(pages)/dashboard/page.tsx'
+__turbopack_esm__({
+    "default": (()=>Clock)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+;
+var _s = __turbopack_refresh__.signature();
+"use client";
+;
+function Clock({ initial, timezone }) {
+    _s();
+    const [time, setTime] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(calculateLocalTime(initial, timezone));
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "Clock.useEffect": ()=>{
+            const timer = setInterval({
+                "Clock.useEffect.timer": ()=>{
+                    setTime(calculateLocalTime(new Date(), timezone));
+                }
+            }["Clock.useEffect.timer"], 1000);
+            return ({
+                "Clock.useEffect": ()=>clearInterval(timer)
+            })["Clock.useEffect"];
+        }
+    }["Clock.useEffect"], [
+        timezone
+    ]);
+    function calculateLocalTime(initialTime, offsetSeconds) {
+        // Calculate the local time by adjusting the initial time with the offset
+        const localTime = new Date(initialTime.getTime() + offsetSeconds * 1000);
+        return localTime;
+    }
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "tabular-nums",
+        children: time.toLocaleTimeString("en-US", {
+            timeZone: "UTC",
+            hour12: true,
+            hour: "numeric",
+            minute: "2-digit",
+            second: "2-digit"
+        })
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/clock.tsx",
+        lineNumber: 28,
+        columnNumber: 5
+    }, this);
+}
+_s(Clock, "fuINl3V4mbNU3afhfSLr9TcT/8Q=");
+_c = Clock;
+var _c;
+__turbopack_refresh__.register(_c, "Clock");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_refresh__.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
+"[project]/src/lib/dateUtils.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
 
-Expected 'from', got 'const'`);
-e.code = 'MODULE_UNPARSEABLE';
-throw e;}}),
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, k: __turbopack_refresh__, m: module, z: __turbopack_require_stub__ } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "convertToDate": (()=>convertToDate),
+    "formatSunTimeWithAMPM": (()=>formatSunTimeWithAMPM)
+});
+function convertToDate(timezone, dt, weekdayFormat) {
+    let utc_time = new Date(dt * 1000);
+    let local_time = new Date(utc_time.getTime() + timezone * 1000);
+    const options = {
+        weekday: weekdayFormat
+    };
+    const dateFormatter = new Intl.DateTimeFormat("UTC", options);
+    return dateFormatter.format(local_time);
+}
+function formatSunTimeWithAMPM(timestamp, timezoneOffset) {
+    const date = new Date((timestamp + timezoneOffset) * 1000);
+    const formattedTime = new Intl.DateTimeFormat("en-US", {
+        timeZone: "UTC",
+        hour: "numeric",
+        minute: "2-digit",
+        hour12: true
+    }).format(date);
+    return formattedTime;
+}
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_refresh__.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
+"[project]/src/lib/iconMap.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, k: __turbopack_refresh__, m: module, z: __turbopack_require_stub__ } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "weatherIconMappings": (()=>weatherIconMappings)
+});
+const weatherIconMappings = {
+    "200": "thunderstorm",
+    "201": "thunderstorm",
+    "202": "thunderstorm",
+    "210": "lightning",
+    "211": "lightning",
+    "212": "lightning",
+    "221": "lightning",
+    "230": "thunderstorm",
+    "231": "thunderstorm",
+    "232": "thunderstorm",
+    "300": "sprinkle",
+    "301": "sprinkle",
+    "302": "rain",
+    "310": "rain-mix",
+    "311": "rain",
+    "312": "rain",
+    "313": "showers",
+    "314": "rain",
+    "321": "sprinkle",
+    "500": "sprinkle",
+    "501": "rain",
+    "502": "rain",
+    "503": "rain",
+    "504": "rain",
+    "511": "rain-mix",
+    "520": "showers",
+    "521": "showers",
+    "522": "showers",
+    "531": "storm-showers",
+    "600": "snow",
+    "601": "snow",
+    "602": "sleet",
+    "611": "rain-mix",
+    "612": "rain-mix",
+    "615": "rain-mix",
+    "616": "rain-mix",
+    "620": "rain-mix",
+    "621": "snow",
+    "622": "snow",
+    "701": "showers",
+    "711": "smoke",
+    "721": "day-haze",
+    "731": "dust",
+    "741": "fog",
+    "761": "dust",
+    "762": "dust",
+    "771": "cloudy-gusts",
+    "781": "tornado",
+    "800": "day-sunny",
+    "801": "cloudy-gusts",
+    "802": "cloudy-gusts",
+    "803": "cloudy-gusts",
+    "804": "cloudy",
+    "900": "tornado",
+    "901": "storm-showers",
+    "902": "hurricane",
+    "903": "snowflake-cold",
+    "904": "hot",
+    "905": "windy",
+    "906": "hail",
+    "957": "strong-wind",
+    "200d": "day-thunderstorm",
+    "201d": "day-thunderstorm",
+    "202d": "day-thunderstorm",
+    "210d": "day-lightning",
+    "211d": "day-lightning",
+    "212d": "day-lightning",
+    "221d": "day-lightning",
+    "230d": "day-thunderstorm",
+    "231d": "day-thunderstorm",
+    "232d": "day-thunderstorm",
+    "300d": "day-sprinkle",
+    "301d": "day-sprinkle",
+    "302d": "day-rain",
+    "310d": "day-rain",
+    "311d": "day-rain",
+    "312d": "day-rain",
+    "313d": "day-rain",
+    "314d": "day-rain",
+    "321d": "day-sprinkle",
+    "500d": "day-sprinkle",
+    "501d": "day-rain",
+    "502d": "day-rain",
+    "503d": "day-rain",
+    "504d": "day-rain",
+    "511d": "day-rain-mix",
+    "520d": "day-showers",
+    "521d": "day-showers",
+    "522d": "day-showers",
+    "531d": "day-storm-showers",
+    "600d": "day-snow",
+    "601d": "day-sleet",
+    "602d": "day-snow",
+    "611d": "day-rain-mix",
+    "612d": "day-rain-mix",
+    "615d": "day-rain-mix",
+    "616d": "day-rain-mix",
+    "620d": "day-rain-mix",
+    "621d": "day-snow",
+    "622d": "day-snow",
+    "701d": "day-showers",
+    "711d": "smoke",
+    "721d": "day-haze",
+    "731d": "dust",
+    "741d": "day-fog",
+    "761d": "dust",
+    "762d": "dust",
+    "781d": "tornado",
+    "800d": "day-sunny",
+    "801d": "day-cloudy-gusts",
+    "802d": "day-cloudy-gusts",
+    "803d": "day-cloudy-gusts",
+    "804d": "day-sunny-overcast",
+    "900d": "tornado",
+    "902d": "hurricane",
+    "903d": "snowflake-cold",
+    "904d": "hot",
+    "906d": "day-hail",
+    "957d": "strong-wind",
+    "200n": "night-alt-thunderstorm",
+    "201n": "night-alt-thunderstorm",
+    "202n": "night-alt-thunderstorm",
+    "210n": "night-alt-lightning",
+    "211n": "night-alt-lightning",
+    "212n": "night-alt-lightning",
+    "221n": "night-alt-lightning",
+    "230n": "night-alt-thunderstorm",
+    "231n": "night-alt-thunderstorm",
+    "232n": "night-alt-thunderstorm",
+    "300n": "night-alt-sprinkle",
+    "301n": "night-alt-sprinkle",
+    "302n": "night-alt-rain",
+    "310n": "night-alt-rain",
+    "311n": "night-alt-rain",
+    "312n": "night-alt-rain",
+    "313n": "night-alt-rain",
+    "314n": "night-alt-rain",
+    "321n": "night-alt-sprinkle",
+    "500n": "night-alt-sprinkle",
+    "501n": "night-alt-rain",
+    "502n": "night-alt-rain",
+    "503n": "night-alt-rain",
+    "504n": "night-alt-rain",
+    "511n": "night-alt-rain-mix",
+    "520n": "night-alt-showers",
+    "521n": "night-alt-showers",
+    "522n": "night-alt-showers",
+    "531n": "night-alt-storm-showers",
+    "600n": "night-alt-snow",
+    "601n": "night-alt-sleet",
+    "602n": "night-alt-snow",
+    "611n": "night-alt-rain-mix",
+    "612n": "night-alt-rain-mix",
+    "615n": "night-alt-rain-mix",
+    "616n": "night-alt-rain-mix",
+    "620n": "night-alt-rain-mix",
+    "621n": "night-alt-snow",
+    "622n": "night-alt-snow",
+    "701n": "night-alt-showers",
+    "711n": "smoke",
+    "721n": "day-haze",
+    "731n": "dust",
+    "741n": "night-fog",
+    "761n": "dust",
+    "762n": "dust",
+    "781n": "tornado",
+    "800n": "night-clear",
+    "801n": "night-alt-cloudy-gusts",
+    "802n": "night-alt-cloudy-gusts",
+    "803n": "night-alt-cloudy-gusts",
+    "804n": "night-alt-cloudy",
+    "900n": "tornado",
+    "902n": "hurricane",
+    "903n": "snowflake-cold",
+    "904n": "hot",
+    "906n": "night-alt-hail",
+    "957n": "strong-wind"
+};
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_refresh__.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
+"[project]/src/components/ui/icon-component.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, k: __turbopack_refresh__, m: module, z: __turbopack_require_stub__ } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "default": (()=>IconComponent)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$iconMap$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/lib/iconMap.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/image.js [app-client] (ecmascript)");
+;
+;
+;
+function IconComponent({ weatherCode, x, className }) {
+    const iconNameKey = x ? `${weatherCode}${x}` : weatherCode;
+    const iconName = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$iconMap$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["weatherIconMappings"][iconNameKey];
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: `relative invert-0 dark:invert ${className}`,
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+            fill: true,
+            alt: weatherCode,
+            src: `/icons/wi-${iconName}.svg`,
+            className: "select-none"
+        }, void 0, false, {
+            fileName: "[project]/src/components/ui/icon-component.tsx",
+            lineNumber: 20,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/icon-component.tsx",
+        lineNumber: 19,
+        columnNumber: 5
+    }, this);
+}
+_c = IconComponent;
+var _c;
+__turbopack_refresh__.register(_c, "IconComponent");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_refresh__.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
+"[project]/src/app/components/widget/currentWeather.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, k: __turbopack_refresh__, m: module, z: __turbopack_require_stub__ } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "default": (()=>CurrentWeather)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/ui/card.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$clock$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/ui/clock.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$dateUtils$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/lib/dateUtils.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$icon$2d$component$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/ui/icon-component.tsx [app-client] (ecmascript)");
+;
+;
+;
+;
+;
+function CurrentWeather({ data, city, className }) {
+    const initial = new Date();
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+        className: "relative flex p-2 h-40 w-60 h shrink-0 flex-col justify-between overflow-hidden md:h-[25rem]",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "absolute "
+            }, void 0, false, {
+                fileName: "[project]/src/app/components/widget/currentWeather.tsx",
+                lineNumber: 67,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex justify-between text-lg font-semibold",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$dateUtils$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["convertToDate"])(city.timezone, data.dt, "long")
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/components/widget/currentWeather.tsx",
+                                lineNumber: 70,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$clock$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                initial: initial,
+                                timezone: city.timezone
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/components/widget/currentWeather.tsx",
+                                lineNumber: 71,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/components/widget/currentWeather.tsx",
+                        lineNumber: 69,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "text-md mt-2 flex font-bold",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                children: city.name
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/components/widget/currentWeather.tsx",
+                                lineNumber: 74,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                    viewBox: "0 0 24 24",
+                                    xmlns: "http://www.w3.org/2000/svg",
+                                    className: "ml-0.5 h-4 w-4 fill-none stroke-black dark:stroke-white",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                            d: "M7.39993 6.32003L15.8899 3.49003C19.6999 2.22003 21.7699 4.30003 20.5099 8.11003L17.6799 16.6C15.7799 22.31 12.6599 22.31 10.7599 16.6L9.91993 14.08L7.39993 13.24C1.68993 11.34 1.68993 8.23003 7.39993 6.32003Z",
+                                            strokeWidth: "1.5",
+                                            strokeLinecap: "round",
+                                            strokeLinejoin: "round"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/components/widget/currentWeather.tsx",
+                                            lineNumber: 81,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                            d: "M10.1101 13.6501L13.6901 10.0601",
+                                            strokeWidth: "1.5",
+                                            strokeLinecap: "round",
+                                            strokeLinejoin: "round"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/components/widget/currentWeather.tsx",
+                                            lineNumber: 87,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/app/components/widget/currentWeather.tsx",
+                                    lineNumber: 76,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/components/widget/currentWeather.tsx",
+                                lineNumber: 75,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/components/widget/currentWeather.tsx",
+                        lineNumber: 73,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/app/components/widget/currentWeather.tsx",
+                lineNumber: 68,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "flex justify-center py-2 text-6xl font-bold md:py-2",
+                children: [
+                    Math.round(data.main.temp),
+                    "°"
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/app/components/widget/currentWeather.tsx",
+                lineNumber: 97,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$icon$2d$component$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        weatherCode: data.weather[0].id,
+                        x: data.sys.pod,
+                        className: "h-9 w-9"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/components/widget/currentWeather.tsx",
+                        lineNumber: 101,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "font-semibold",
+                        children: data.weather[0].main
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/components/widget/currentWeather.tsx",
+                        lineNumber: 106,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex gap-2 dark:text-neutral-500",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                children: [
+                                    "H: ",
+                                    Math.round(data.main.temp_max),
+                                    "°"
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/components/widget/currentWeather.tsx",
+                                lineNumber: 108,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                children: [
+                                    "L: ",
+                                    Math.round(data.main.temp_min),
+                                    "°"
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/components/widget/currentWeather.tsx",
+                                lineNumber: 109,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/components/widget/currentWeather.tsx",
+                        lineNumber: 107,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/app/components/widget/currentWeather.tsx",
+                lineNumber: 100,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/app/components/widget/currentWeather.tsx",
+        lineNumber: 66,
+        columnNumber: 5
+    }, this);
+}
+_c = CurrentWeather;
+var _c;
+__turbopack_refresh__.register(_c, "CurrentWeather");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_refresh__.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
+"[project]/src/app/(pages)/dashboard/page.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, k: __turbopack_refresh__, m: module, z: __turbopack_require_stub__ } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "default": (()=>Dashboard)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$header$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/components/header.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$widget$2f$airPollution$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/components/widget/airPollution.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$widget$2f$currentWeather$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/components/widget/currentWeather.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/axios/lib/axios.js [app-client] (ecmascript)");
+;
+var _s = __turbopack_refresh__.signature();
+"use client";
+;
+;
+;
+;
+;
+const airQuality = {
+    dt: 1710417600,
+    main: {
+        aqi: 3
+    },
+    components: {
+        co: 200.5,
+        no: 0.3,
+        no2: 12.8,
+        o3: 90.5,
+        so2: 0.8,
+        pm2_5: 15.2,
+        pm10: 25.3,
+        nh3: 0.7
+    }
+};
+const sampleWeatherData = {
+    dt: 1712847600,
+    main: {
+        temp: 30,
+        feels_like: 33,
+        temp_min: 28,
+        temp_max: 32,
+        pressure: 1012,
+        humidity: 70
+    },
+    weather: [
+        {
+            id: 801,
+            main: "Clouds",
+            description: "few clouds",
+            icon: "02d"
+        }
+    ],
+    clouds: {
+        all: 20
+    },
+    wind: {
+        speed: 4.1,
+        deg: 140,
+        gust: 7.2
+    },
+    visibility: 10000,
+    pop: 0.1,
+    sys: {
+        pod: "d"
+    },
+    dt_txt: "2025-04-11 12:00:00"
+};
+const sampleCity = {
+    id: 123456,
+    name: "Manila",
+    coord: {
+        lon: 120.9842,
+        lat: 14.5995
+    },
+    country: "PH",
+    population: 14000000,
+    timezone: 28800,
+    sunrise: 1712819300,
+    sunset: 1712863400
+};
+function Dashboard() {
+    _s();
+    const [city, setCity] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("Boac");
+    const [weather, setWeather] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [darkMode, setDarkMode] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const getWeather = async (cityName)=>{
+        setLoading(true);
+        try {
+            const response = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].get(`http://localhost:5000/get-weather?city=${cityName}`);
+            console.log("Weather data:", response.data);
+            setWeather(response.data);
+        } catch (error) {
+            console.error("Error fetching weather data:", error);
+            setWeather(null);
+        } finally{
+            setLoading(false);
+        }
+    };
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "Dashboard.useEffect": ()=>{
+            getWeather(city);
+        }
+    }["Dashboard.useEffect"], [
+        city
+    ]);
+    const toggleDarkMode = ()=>{
+        setDarkMode(!darkMode);
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: `min-h-screen flex flex-col py-10 px-10 transition-all duration-500 ${darkMode ? "bg-gray-900 text-white" : "bg-white text-black"}`,
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
+                className: "mb-8",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                    className: "text-4xl font-bold",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$header$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        darkMode: darkMode,
+                        toggleDarkMode: toggleDarkMode
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
+                        lineNumber: 139,
+                        columnNumber: 7
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
+                    lineNumber: 138,
+                    columnNumber: 5
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
+                lineNumber: 137,
+                columnNumber: 3
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "w-full",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$widget$2f$airPollution$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        airQuality: airQuality,
+                        className: "w-96 h-40"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
+                        lineNumber: 144,
+                        columnNumber: 5
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$widget$2f$currentWeather$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        data: sampleWeatherData,
+                        city: sampleCity,
+                        className: "w-96 h-40"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
+                        lineNumber: 145,
+                        columnNumber: 5
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
+                lineNumber: 143,
+                columnNumber: 3
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
+        lineNumber: 132,
+        columnNumber: 1
+    }, this);
+}
+_s(Dashboard, "oAAJT6qvbApclSwGm7mE33xEa4s=");
+_c = Dashboard;
+var _c;
+__turbopack_refresh__.register(_c, "Dashboard");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_refresh__.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
 "[project]/src/app/page.tsx [app-rsc] (ecmascript, Next.js server component, client modules)": ((__turbopack_context__) => {
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, t: __turbopack_require_real__ } = __turbopack_context__;
@@ -474,4 +1164,4 @@ var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_
 }}),
 }]);
 
-//# sourceMappingURL=src_afacd4._.js.map
+//# sourceMappingURL=src_aba5df._.js.map
