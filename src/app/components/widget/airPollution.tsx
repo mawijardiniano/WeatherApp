@@ -93,7 +93,23 @@ export default function AirPollution({
         </CardTitle>
       </CardHeader>
       <CardContent className="my-auto">
-        <Progress aria-label="Air pollution" value={airQuality.main.aqi * 10} />
+      <div className="relative w-full">
+  <Progress
+    aria-label="Air pollution"
+    value={airQuality.main.aqi * 10}
+    className="bg-gradient-to-r from-blue-500 via-green-500 via-yellow-500 to-red-500 [&>div]:bg-gradient-to-r [&>div]:from-blue-500 [&>div]:via-green-500 [&>div]:via-yellow-500 [&>div]:to-red-500"
+  />
+  <div
+    className="absolute top-1/2 -translate-y-1/2 w-4 h-4 bg-white rounded-full border border-black"
+    style={{
+      left: `${airQuality.main.aqi * 10}%`,
+      transform: 'translate(-50%, -50%)',
+    }}
+  />
+</div>
+
+
+
       </CardContent>
       <CardFooter>
         <p>

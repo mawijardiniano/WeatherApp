@@ -6,7 +6,9 @@ import { Button } from "@/components/ui/button";
 import { format } from "date-fns";
 import Header from "@/app/components/header";
 import AirPollution, {AirQualityData} from "@/app/components/widget/airPollution"
-import CurrentWeather, {City, HourlyForecastData} from "@/app/components/widget/currentWeather";
+import Sun from "@/app/components/widget/sun"
+import CurrentWeather, { HourlyForecastData} from "@/app/components/widget/currentWeather";
+import {City} from "@/lib/types"
 
 
 const airQuality: AirQualityData = {
@@ -140,9 +142,10 @@ export default function Dashboard() {
     </h1>
   </header>
 
-  <div className="w-full">
+  <div className="w-full flex flex-row gap-4">
     <AirPollution airQuality={airQuality} className="w-96 h-40"/>
-    <CurrentWeather data={sampleWeatherData} city={sampleCity}  className="w-96 h-40"/>
+   <CurrentWeather data={sampleWeatherData} city={sampleCity}/>
+   <Sun sun={sampleCity}/>
   </div>
 </div>
 

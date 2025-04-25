@@ -3,6 +3,7 @@ import Clock from "@/components/ui/clock"
 import { convertToDate } from "@/lib/dateUtils"
 import IconComponent from "@/components/ui/icon-component"
 import { ClassNameValue } from "tailwind-merge"
+import {City} from "@/lib/types"
 
 interface CurrentWeatherProps {
   data: HourlyForecastData
@@ -45,25 +46,12 @@ export type HourlyForecastData = {
     dt_txt: string
   }
 
-  export type City = {
-    id: number
-    name: string
-    coord: {
-      lon: number
-      lat: number
-    }
-    country: string
-    population: number
-    timezone: number
-    sunrise: number
-    sunset: number
-  }
 
 export default function CurrentWeather({ data, city, className }: CurrentWeatherProps) {
   const initial = new Date()
 
   return (
-    <Card className="relative flex p-2 h-40 w-60 h shrink-0 flex-col justify-between overflow-hidden md:h-[25rem]">
+    <Card className="relative flex p-4 w-60  shrink-0 flex-col justify-between overflow-hidden">
       <div className="absolute " />
       <div>
         <div className="flex justify-between text-lg font-semibold">
@@ -94,7 +82,7 @@ export default function CurrentWeather({ data, city, className }: CurrentWeather
           </i>
         </div>
       </div>
-      <div className="flex justify-center py-2 text-6xl font-bold md:py-2">
+      <div className="flex justify-center p-4 text-6xl font-bold">
         {Math.round(data.main.temp)}&deg;
       </div>
       <div>
