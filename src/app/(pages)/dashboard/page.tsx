@@ -7,8 +7,9 @@ import { format } from "date-fns";
 import Header from "@/app/components/header";
 import AirPollution, {AirQualityData} from "@/app/components/widget/airPollution"
 import Sun from "@/app/components/widget/sun"
-import CurrentWeather, { HourlyForecastData} from "@/app/components/widget/currentWeather";
-import {City} from "@/lib/types"
+import Feel from "@/app/components/widget/feelLike";
+import CurrentWeather from "@/app/components/widget/currentWeather";
+import {City,HourlyForecastData} from "@/lib/types"
 
 
 const airQuality: AirQualityData = {
@@ -54,7 +55,7 @@ interface Weather {
 const sampleWeatherData: HourlyForecastData = {
   dt: 1712847600,
   main: {
-    temp: 30,
+    temp: 55,
     feels_like: 33,
     temp_min: 28,
     temp_max: 32,
@@ -146,6 +147,7 @@ export default function Dashboard() {
     <AirPollution airQuality={airQuality} className="w-96 h-40"/>
    <CurrentWeather data={sampleWeatherData} city={sampleCity}/>
    <Sun sun={sampleCity}/>
+   <Feel feel={sampleWeatherData}/>
   </div>
 </div>
 
