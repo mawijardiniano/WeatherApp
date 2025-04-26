@@ -9,29 +9,12 @@ import {
 import { Progress } from "@/components/ui/progress"
 import { cn } from "@/lib/utils"
 import { ClassNameValue } from "tailwind-merge"
+import { AirQualityData } from "@/lib/types"
 
 interface AirPollutionProps {
   airQuality: AirQualityData
   className?: ClassNameValue
 }
-
-
-export type AirQualityData = {
-    dt: number
-    main: {
-      aqi: 1 | 2 | 3 | 4 | 5
-    }
-    components: {
-      co: number
-      no: number
-      no2: number
-      o3: number
-      so2: number
-      pm2_5: number
-      pm10: number
-      nh3: number
-    }
-  }
 
 export default function AirPollution({
   airQuality,

@@ -337,7 +337,7 @@ function AirPollution({ airQuality, className }) {
                                         fill: "white"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/widget/airPollution.tsx",
-                                        lineNumber: 56,
+                                        lineNumber: 39,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -346,7 +346,7 @@ function AirPollution({ airQuality, className }) {
                                         fill: "white"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/widget/airPollution.tsx",
-                                        lineNumber: 61,
+                                        lineNumber: 44,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -355,7 +355,7 @@ function AirPollution({ airQuality, className }) {
                                         fill: "white"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/widget/airPollution.tsx",
-                                        lineNumber: 66,
+                                        lineNumber: 49,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -364,7 +364,7 @@ function AirPollution({ airQuality, className }) {
                                         fill: "white"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/widget/airPollution.tsx",
-                                        lineNumber: 71,
+                                        lineNumber: 54,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -373,7 +373,7 @@ function AirPollution({ airQuality, className }) {
                                         fill: "white"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/widget/airPollution.tsx",
-                                        lineNumber: 76,
+                                        lineNumber: 59,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -382,7 +382,7 @@ function AirPollution({ airQuality, className }) {
                                         fill: "white"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/widget/airPollution.tsx",
-                                        lineNumber: 81,
+                                        lineNumber: 64,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -390,45 +390,66 @@ function AirPollution({ airQuality, className }) {
                                         fill: "white"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/widget/airPollution.tsx",
-                                        lineNumber: 86,
+                                        lineNumber: 69,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/widget/airPollution.tsx",
-                                lineNumber: 50,
+                                lineNumber: 33,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/widget/airPollution.tsx",
-                            lineNumber: 49,
+                            lineNumber: 32,
                             columnNumber: 11
                         }, this),
                         "Air pollution"
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/components/widget/airPollution.tsx",
-                    lineNumber: 48,
+                    lineNumber: 31,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/widget/airPollution.tsx",
-                lineNumber: 47,
+                lineNumber: 30,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
                 className: "my-auto",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$progress$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Progress"], {
-                    "aria-label": "Air pollution",
-                    value: airQuality.main.aqi * 10
-                }, void 0, false, {
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "relative w-full",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$progress$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Progress"], {
+                            "aria-label": "Air pollution",
+                            value: airQuality.main.aqi * 10,
+                            className: "bg-gradient-to-r from-blue-500 via-green-500 via-yellow-500 to-red-500 [&>div]:bg-gradient-to-r [&>div]:from-blue-500 [&>div]:via-green-500 [&>div]:via-yellow-500 [&>div]:to-red-500"
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/components/widget/airPollution.tsx",
+                            lineNumber: 80,
+                            columnNumber: 3
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "absolute top-1/2 -translate-y-1/2 w-4 h-4 bg-white rounded-full border border-black",
+                            style: {
+                                left: `${airQuality.main.aqi * 10}%`,
+                                transform: 'translate(-50%, -50%)'
+                            }
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/components/widget/airPollution.tsx",
+                            lineNumber: 85,
+                            columnNumber: 3
+                        }, this)
+                    ]
+                }, void 0, true, {
                     fileName: "[project]/src/app/components/widget/airPollution.tsx",
-                    lineNumber: 96,
-                    columnNumber: 9
+                    lineNumber: 79,
+                    columnNumber: 7
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/widget/airPollution.tsx",
-                lineNumber: 95,
+                lineNumber: 78,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardFooter"], {
@@ -436,18 +457,18 @@ function AirPollution({ airQuality, className }) {
                     children: airQuality.main.aqi < 50 ? "Air quality is good." : airQuality.main.aqi < 100 ? "Air quality is moderate." : airQuality.main.aqi < 150 ? "Air quality is unhealthy for sensitive groups." : airQuality.main.aqi < 200 ? "Air quality is unhealthy." : airQuality.main.aqi < 300 ? "Air quality is very unhealthy." : "Air quality is hazardous."
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/widget/airPollution.tsx",
-                    lineNumber: 99,
+                    lineNumber: 98,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/widget/airPollution.tsx",
-                lineNumber: 98,
+                lineNumber: 97,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/components/widget/airPollution.tsx",
-        lineNumber: 41,
+        lineNumber: 24,
         columnNumber: 5
     }, this);
 }
@@ -478,80 +499,20 @@ var _s = __turbopack_refresh__.signature();
 ;
 ;
 ;
-const airQuality = {
-    dt: 1710417600,
-    main: {
-        aqi: 3
-    },
-    components: {
-        co: 200.5,
-        no: 0.3,
-        no2: 12.8,
-        o3: 90.5,
-        so2: 0.8,
-        pm2_5: 15.2,
-        pm10: 25.3,
-        nh3: 0.7
-    }
-};
-const sampleWeatherData = {
-    dt: 1712847600,
-    main: {
-        temp: 30,
-        feels_like: 33,
-        temp_min: 28,
-        temp_max: 32,
-        pressure: 1012,
-        humidity: 70
-    },
-    weather: [
-        {
-            id: 801,
-            main: "Clouds",
-            description: "few clouds",
-            icon: "02d"
-        }
-    ],
-    clouds: {
-        all: 20
-    },
-    wind: {
-        speed: 4.1,
-        deg: 140,
-        gust: 7.2
-    },
-    visibility: 10000,
-    pop: 0.1,
-    sys: {
-        pod: "d"
-    },
-    dt_txt: "2025-04-11 12:00:00"
-};
-const sampleCity = {
-    id: 123456,
-    name: "Manila",
-    coord: {
-        lon: 120.9842,
-        lat: 14.5995
-    },
-    country: "PH",
-    population: 14000000,
-    timezone: 28800,
-    sunrise: 1712819300,
-    sunset: 1712863400
-};
 function Dashboard() {
     _s();
     const [city, setCity] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("Boac");
     const [weather, setWeather] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [airQuality, setAirQuality] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [darkMode, setDarkMode] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const getWeather = async (cityName)=>{
         setLoading(true);
         try {
-            const response = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].get(`http://localhost:5000/get-weather?city=${cityName}`);
-            console.log("Weather data:", response.data);
-            setWeather(response.data);
+            const response = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].get(`http://localhost:5000/get-weather?city=Manila`);
+            console.log("Weather data:", response.data.current);
+            setWeather(response.data.current);
+            setAirQuality(response.data.air_pollution.list[0]);
         } catch (error) {
             console.error("Error fetching weather data:", error);
             setWeather(null);
@@ -581,42 +542,42 @@ function Dashboard() {
                         toggleDarkMode: toggleDarkMode
                     }, void 0, false, {
                         fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
-                        lineNumber: 139,
+                        lineNumber: 57,
                         columnNumber: 7
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
-                    lineNumber: 138,
+                    lineNumber: 56,
                     columnNumber: 5
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
-                lineNumber: 137,
+                lineNumber: 55,
                 columnNumber: 3
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "w-full",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$widget$2f$airPollution$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                className: "w-full flex flex-row gap-4",
+                children: airQuality && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$widget$2f$airPollution$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                     airQuality: airQuality,
                     className: "w-96 h-40"
                 }, void 0, false, {
                     fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
-                    lineNumber: 144,
-                    columnNumber: 5
+                    lineNumber: 63,
+                    columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
-                lineNumber: 143,
+                lineNumber: 61,
                 columnNumber: 3
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
-        lineNumber: 132,
+        lineNumber: 50,
         columnNumber: 1
     }, this);
 }
-_s(Dashboard, "oAAJT6qvbApclSwGm7mE33xEa4s=");
+_s(Dashboard, "vcbhrCbbm21CxjQFwX+JZyUa1IM=");
 _c = Dashboard;
 var _c;
 __turbopack_refresh__.register(_c, "Dashboard");

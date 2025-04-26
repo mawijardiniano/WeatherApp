@@ -1,24 +1,22 @@
-import { Card } from "@/components/ui/card"
-import Clock from "@/components/ui/clock"
-import { convertToDate } from "@/lib/dateUtils"
-import IconComponent from "@/components/ui/icon-component"
-import { ClassNameValue } from "tailwind-merge"
-import {City,HourlyForecastData} from "@/lib/types"
+import { Card } from "@/components/ui/card";
+import Clock from "@/components/ui/clock";
+import { convertToDate } from "@/lib/dateUtils";
+import IconComponent from "@/components/ui/icon-component";
+import { ClassNameValue } from "tailwind-merge";
+import { City, HourlyForecastData } from "@/lib/types";
 
 interface CurrentWeatherProps {
-  data: HourlyForecastData
-  city: City
-  className?: ClassNameValue
+  data: HourlyForecastData;
+  city: City;
+  className?: ClassNameValue;
 }
 
-
-
 export default function CurrentWeather({ data, city, className }: CurrentWeatherProps) {
-  const initial = new Date()
+  const initial = new Date();
 
   return (
-    <Card className="relative flex p-4 w-60  shrink-0 flex-col justify-between overflow-hidden">
-      <div className="absolute " />
+    <Card className="relative flex p-4 w-60 shrink-0 flex-col justify-between overflow-hidden">
+      <div className="absolute" />
       <div>
         <div className="flex justify-between text-lg font-semibold">
           <span>{convertToDate(city.timezone, data.dt, "long")}</span>
@@ -64,7 +62,5 @@ export default function CurrentWeather({ data, city, className }: CurrentWeather
         </div>
       </div>
     </Card>
-
-    
-  )
+  );
 }

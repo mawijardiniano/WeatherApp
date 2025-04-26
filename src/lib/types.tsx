@@ -1,3 +1,10 @@
+export type WeatherResponse = {
+  city: City
+  hourly: HourlyForecastData
+  air: AirQualityData
+  uv: UV
+}
+
 export type City = {
     id: number
     name: string
@@ -6,7 +13,6 @@ export type City = {
       lat: number
     }
     country: string
-    population: number
     timezone: number
     sunrise: number
     sunset: number
@@ -47,3 +53,26 @@ export type HourlyForecastData = {
     }
     dt_txt: string
   }
+
+
+  
+export type AirQualityData = {
+  dt: number
+  main: {
+    aqi: 1 | 2 | 3 | 4 | 5
+  }
+  components: {
+    co: number
+    no: number
+    no2: number
+    o3: number
+    so2: number
+    pm2_5: number
+    pm10: number
+    nh3: number
+  }
+}
+
+export type UV = {
+  uv_index_max: number
+}

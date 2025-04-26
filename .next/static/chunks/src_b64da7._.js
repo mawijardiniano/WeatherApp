@@ -337,7 +337,7 @@ function AirPollution({ airQuality, className }) {
                                         fill: "white"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/widget/airPollution.tsx",
-                                        lineNumber: 56,
+                                        lineNumber: 39,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -346,7 +346,7 @@ function AirPollution({ airQuality, className }) {
                                         fill: "white"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/widget/airPollution.tsx",
-                                        lineNumber: 61,
+                                        lineNumber: 44,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -355,7 +355,7 @@ function AirPollution({ airQuality, className }) {
                                         fill: "white"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/widget/airPollution.tsx",
-                                        lineNumber: 66,
+                                        lineNumber: 49,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -364,7 +364,7 @@ function AirPollution({ airQuality, className }) {
                                         fill: "white"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/widget/airPollution.tsx",
-                                        lineNumber: 71,
+                                        lineNumber: 54,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -373,7 +373,7 @@ function AirPollution({ airQuality, className }) {
                                         fill: "white"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/widget/airPollution.tsx",
-                                        lineNumber: 76,
+                                        lineNumber: 59,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -382,7 +382,7 @@ function AirPollution({ airQuality, className }) {
                                         fill: "white"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/widget/airPollution.tsx",
-                                        lineNumber: 81,
+                                        lineNumber: 64,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -390,30 +390,30 @@ function AirPollution({ airQuality, className }) {
                                         fill: "white"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/widget/airPollution.tsx",
-                                        lineNumber: 86,
+                                        lineNumber: 69,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/widget/airPollution.tsx",
-                                lineNumber: 50,
+                                lineNumber: 33,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/widget/airPollution.tsx",
-                            lineNumber: 49,
+                            lineNumber: 32,
                             columnNumber: 11
                         }, this),
                         "Air pollution"
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/components/widget/airPollution.tsx",
-                    lineNumber: 48,
+                    lineNumber: 31,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/widget/airPollution.tsx",
-                lineNumber: 47,
+                lineNumber: 30,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -427,7 +427,7 @@ function AirPollution({ airQuality, className }) {
                             className: "bg-gradient-to-r from-blue-500 via-green-500 via-yellow-500 to-red-500 [&>div]:bg-gradient-to-r [&>div]:from-blue-500 [&>div]:via-green-500 [&>div]:via-yellow-500 [&>div]:to-red-500"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/widget/airPollution.tsx",
-                            lineNumber: 97,
+                            lineNumber: 80,
                             columnNumber: 3
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -438,18 +438,18 @@ function AirPollution({ airQuality, className }) {
                             }
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/widget/airPollution.tsx",
-                            lineNumber: 102,
+                            lineNumber: 85,
                             columnNumber: 3
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/components/widget/airPollution.tsx",
-                    lineNumber: 96,
+                    lineNumber: 79,
                     columnNumber: 7
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/widget/airPollution.tsx",
-                lineNumber: 95,
+                lineNumber: 78,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardFooter"], {
@@ -457,18 +457,18 @@ function AirPollution({ airQuality, className }) {
                     children: airQuality.main.aqi < 50 ? "Air quality is good." : airQuality.main.aqi < 100 ? "Air quality is moderate." : airQuality.main.aqi < 150 ? "Air quality is unhealthy for sensitive groups." : airQuality.main.aqi < 200 ? "Air quality is unhealthy." : airQuality.main.aqi < 300 ? "Air quality is very unhealthy." : "Air quality is hazardous."
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/widget/airPollution.tsx",
-                    lineNumber: 115,
+                    lineNumber: 98,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/widget/airPollution.tsx",
-                lineNumber: 114,
+                lineNumber: 97,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/components/widget/airPollution.tsx",
-        lineNumber: 41,
+        lineNumber: 24,
         columnNumber: 5
     }, this);
 }
@@ -941,13 +941,13 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$i
 function CurrentWeather({ data, city, className }) {
     const initial = new Date();
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
-        className: "relative flex p-4 w-60  shrink-0 flex-col justify-between overflow-hidden",
+        className: "relative flex p-4 w-60 shrink-0 flex-col justify-between overflow-hidden",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute "
+                className: "absolute"
             }, void 0, false, {
                 fileName: "[project]/src/app/components/widget/currentWeather.tsx",
-                lineNumber: 21,
+                lineNumber: 19,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -959,7 +959,7 @@ function CurrentWeather({ data, city, className }) {
                                 children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$dateUtils$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["convertToDate"])(city.timezone, data.dt, "long")
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/widget/currentWeather.tsx",
-                                lineNumber: 24,
+                                lineNumber: 22,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$clock$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -967,13 +967,13 @@ function CurrentWeather({ data, city, className }) {
                                 timezone: city.timezone
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/widget/currentWeather.tsx",
-                                lineNumber: 25,
+                                lineNumber: 23,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/components/widget/currentWeather.tsx",
-                        lineNumber: 23,
+                        lineNumber: 21,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -983,7 +983,7 @@ function CurrentWeather({ data, city, className }) {
                                 children: city.name
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/widget/currentWeather.tsx",
-                                lineNumber: 28,
+                                lineNumber: 26,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
@@ -999,7 +999,7 @@ function CurrentWeather({ data, city, className }) {
                                             strokeLinejoin: "round"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/widget/currentWeather.tsx",
-                                            lineNumber: 35,
+                                            lineNumber: 33,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1009,30 +1009,30 @@ function CurrentWeather({ data, city, className }) {
                                             strokeLinejoin: "round"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/widget/currentWeather.tsx",
-                                            lineNumber: 41,
+                                            lineNumber: 39,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/components/widget/currentWeather.tsx",
-                                    lineNumber: 30,
+                                    lineNumber: 28,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/widget/currentWeather.tsx",
-                                lineNumber: 29,
+                                lineNumber: 27,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/components/widget/currentWeather.tsx",
-                        lineNumber: 27,
+                        lineNumber: 25,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/widget/currentWeather.tsx",
-                lineNumber: 22,
+                lineNumber: 20,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1043,7 +1043,7 @@ function CurrentWeather({ data, city, className }) {
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/widget/currentWeather.tsx",
-                lineNumber: 51,
+                lineNumber: 49,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1054,7 +1054,7 @@ function CurrentWeather({ data, city, className }) {
                         className: "h-9 w-9"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/widget/currentWeather.tsx",
-                        lineNumber: 55,
+                        lineNumber: 53,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1062,7 +1062,7 @@ function CurrentWeather({ data, city, className }) {
                         children: data.weather[0].main
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/widget/currentWeather.tsx",
-                        lineNumber: 60,
+                        lineNumber: 58,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1076,7 +1076,7 @@ function CurrentWeather({ data, city, className }) {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/widget/currentWeather.tsx",
-                                lineNumber: 62,
+                                lineNumber: 60,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1087,25 +1087,25 @@ function CurrentWeather({ data, city, className }) {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/widget/currentWeather.tsx",
-                                lineNumber: 63,
+                                lineNumber: 61,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/components/widget/currentWeather.tsx",
-                        lineNumber: 61,
+                        lineNumber: 59,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/widget/currentWeather.tsx",
-                lineNumber: 54,
+                lineNumber: 52,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/components/widget/currentWeather.tsx",
-        lineNumber: 20,
+        lineNumber: 18,
         columnNumber: 5
     }, this);
 }
@@ -1142,80 +1142,30 @@ var _s = __turbopack_refresh__.signature();
 ;
 ;
 ;
-const airQuality = {
-    dt: 1710417600,
-    main: {
-        aqi: 3
-    },
-    components: {
-        co: 200.5,
-        no: 0.3,
-        no2: 12.8,
-        o3: 90.5,
-        so2: 0.8,
-        pm2_5: 15.2,
-        pm10: 25.3,
-        nh3: 0.7
-    }
-};
-const sampleWeatherData = {
-    dt: 1712847600,
-    main: {
-        temp: 55,
-        feels_like: 33,
-        temp_min: 28,
-        temp_max: 32,
-        pressure: 1012,
-        humidity: 70
-    },
-    weather: [
-        {
-            id: 801,
-            main: "Clouds",
-            description: "few clouds",
-            icon: "02d"
-        }
-    ],
-    clouds: {
-        all: 20
-    },
-    wind: {
-        speed: 4.1,
-        deg: 140,
-        gust: 7.2
-    },
-    visibility: 10000,
-    pop: 0.1,
-    sys: {
-        pod: "d"
-    },
-    dt_txt: "2025-04-11 12:00:00"
-};
-const sampleCity = {
-    id: 123456,
-    name: "Manila",
-    coord: {
-        lon: 120.9842,
-        lat: 14.5995
-    },
-    country: "PH",
-    population: 14000000,
-    timezone: 28800,
-    sunrise: 1712819300,
-    sunset: 1712863400
-};
 function Dashboard() {
     _s();
     const [city, setCity] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("Boac");
     const [weather, setWeather] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [airQuality, setAirQuality] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [currentCity, setCurrentCity] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [darkMode, setDarkMode] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const getWeather = async (cityName)=>{
         setLoading(true);
         try {
-            const response = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].get(`http://localhost:5000/get-weather?city=${cityName}`);
-            console.log("Weather data:", response.data);
-            setWeather(response.data);
+            const response = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].get(`http://localhost:5000/get-weather?city=Manila`);
+            console.log("Weather data:", response.data.current);
+            setWeather(response.data.current);
+            setAirQuality(response.data.air_pollution.list[0]);
+            setCurrentCity({
+                id: response.data.current.id,
+                name: response.data.current.name,
+                coord: response.data.current.coord,
+                country: response.data.current.sys.country,
+                timezone: response.data.current.timezone,
+                sunrise: response.data.current.sys.sunrise,
+                sunset: response.data.current.sys.sunset
+            });
         } catch (error) {
             console.error("Error fetching weather data:", error);
             setWeather(null);
@@ -1245,66 +1195,73 @@ function Dashboard() {
                         toggleDarkMode: toggleDarkMode
                     }, void 0, false, {
                         fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
-                        lineNumber: 142,
-                        columnNumber: 7
+                        lineNumber: 68,
+                        columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
-                    lineNumber: 141,
-                    columnNumber: 5
+                    lineNumber: 67,
+                    columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
-                lineNumber: 140,
-                columnNumber: 3
+                lineNumber: 66,
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "w-full flex flex-row gap-4",
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$widget$2f$airPollution$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    airQuality && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$widget$2f$airPollution$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                         airQuality: airQuality,
                         className: "w-96 h-40"
                     }, void 0, false, {
                         fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
-                        lineNumber: 147,
-                        columnNumber: 5
+                        lineNumber: 74,
+                        columnNumber: 11
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$widget$2f$currentWeather$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                        data: sampleWeatherData,
-                        city: sampleCity
+                    weather && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$widget$2f$currentWeather$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        data: weather,
+                        city: currentCity
                     }, void 0, false, {
                         fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
-                        lineNumber: 148,
-                        columnNumber: 4
+                        lineNumber: 76,
+                        columnNumber: 21
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$widget$2f$sun$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                        sun: sampleCity
+                    currentCity && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$widget$2f$sun$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        sun: currentCity
                     }, void 0, false, {
                         fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
-                        lineNumber: 149,
-                        columnNumber: 4
+                        lineNumber: 79,
+                        columnNumber: 11
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$widget$2f$feelLike$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                        feel: sampleWeatherData
+                    weather && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$widget$2f$feelLike$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        feel: weather
                     }, void 0, false, {
                         fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
-                        lineNumber: 150,
-                        columnNumber: 4
+                        lineNumber: 84,
+                        columnNumber: 21
+                    }, this),
+                    weather && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$widget$2f$feelLike$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        feel: weather
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
+                        lineNumber: 85,
+                        columnNumber: 21
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
-                lineNumber: 146,
-                columnNumber: 3
+                lineNumber: 72,
+                columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
-        lineNumber: 135,
-        columnNumber: 1
+        lineNumber: 61,
+        columnNumber: 5
     }, this);
 }
-_s(Dashboard, "oAAJT6qvbApclSwGm7mE33xEa4s=");
+_s(Dashboard, "GhRPVodvJuFBLY2lyQTnNSBtdCY=");
 _c = Dashboard;
 var _c;
 __turbopack_refresh__.register(_c, "Dashboard");

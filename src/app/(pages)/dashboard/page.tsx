@@ -1,109 +1,18 @@
 "use client";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { format } from "date-fns";
 import Header from "@/app/components/header";
-import AirPollution, {AirQualityData} from "@/app/components/widget/airPollution"
-import Sun from "@/app/components/widget/sun"
+import AirPollution from "@/app/components/widget/airPollution";
+import Sun from "@/app/components/widget/sun";
 import Feel from "@/app/components/widget/feelLike";
+import Humidity from "@/app/components/widget/humidity";
+import WeatherWidgets from "@/app/components/widget/weatherWidget";
 import CurrentWeather from "@/app/components/widget/currentWeather";
-import {City,HourlyForecastData} from "@/lib/types"
-
-
-const airQuality: AirQualityData = {
-  dt: 1710417600,
-  main: { aqi: 3 },
-  components: {
-    co: 200.5,
-    no: 0.3,
-    no2: 12.8,
-    o3: 90.5,
-    so2: 0.8,
-    pm2_5: 15.2,
-    pm10: 25.3,
-    nh3: 0.7,
-  },
-}
-interface Weather {
-  city: string;
-  current: {
-    temperature: number;
-    feels_like: number;
-    humidity: number;
-    pressure: number;
-    wind_speed: number;
-    visibility: number;
-    description: string;
-    icon: string;
-  };
-  forecast: [
-    {
-      date: string;
-      temperature: {
-        min: number;
-        max: number;
-      };
-      humidity: number;
-      icon: string;
-      description: string;
-    }
-  ];
-}
-
-const sampleWeatherData: HourlyForecastData = {
-  dt: 1712847600,
-  main: {
-    temp: 55,
-    feels_like: 33,
-    temp_min: 28,
-    temp_max: 32,
-    pressure: 1012,
-    humidity: 70
-  },
-  weather: [
-    {
-      id: 801,
-      main: "Clouds",
-      description: "few clouds",
-      icon: "02d"
-    }
-  ],
-  clouds: {
-    all: 20
-  },
-  wind: {
-    speed: 4.1,
-    deg: 140,
-    gust: 7.2
-  },
-  visibility: 10000,
-  pop: 0.1,
-  sys: {
-    pod: "d"
-  },
-  dt_txt: "2025-04-11 12:00:00"
-}
-
-const sampleCity: City = {
-  id: 123456,
-  name: "Manila",
-  coord: {
-    lon: 120.9842,
-    lat: 14.5995
-  },
-  country: "PH",
-  population: 14000000,
-  timezone: 28800,
-  sunrise: 1712819300,
-  sunset: 1712863400
-}
-
+import { City, HourlyForecastData, AirQualityData , WeatherResponse } from "@/lib/types";
 
 export default function Dashboard() {
   const [city, setCity] = useState("Boac");
-  const [weather, setWeather] = useState<Weather | null>(null);
+  const [weather, setWeather] = useState<WeatherResponse | null>(null);
   const [loading, setLoading] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
 
@@ -113,8 +22,31 @@ export default function Dashboard() {
       const response = await axios.get(
         `http://localhost:5000/get-weather?city=${cityName}`
       );
-      console.log("Weather data:", response.data);
-      setWeather(response.data);
+  
+      const data = response.data;
+  
+      const weatherData: WeatherResponse = {
+        city: {
+          id: data.current.id,
+          name: data.current.name,
+          coord: data.current.coord,
+          country: data.current.sys.country,
+          timezone: data.current.timezone,
+          sunrise: data.current.sys.sunrise,
+          sunset: data.current.sys.sunset,
+        },
+        hourly: data.forecast.list[0], // 👈 pick the first hour or map through the list
+        air: {
+          dt: data.air_pollution.list[0].dt,
+          main: data.air_pollution.list[0].main,
+          components: data.air_pollution.list[0].components,
+        },
+        uv: {
+          uv_index_max: data.uv_index.daily.uv_index_max[0],
+        }
+      };
+  
+      setWeather(weatherData);
     } catch (error) {
       console.error("Error fetching weather data:", error);
       setWeather(null);
@@ -122,6 +54,7 @@ export default function Dashboard() {
       setLoading(false);
     }
   };
+  
 
   useEffect(() => {
     getWeather(city);
@@ -131,25 +64,33 @@ export default function Dashboard() {
     setDarkMode(!darkMode);
   };
 
-  return (
-<div
-  className={`min-h-screen flex flex-col py-10 px-10 transition-all duration-500 ${
-    darkMode ? "bg-gray-900 text-white" : "bg-white text-black"
-  }`}
->
-  <header className="mb-8">
-    <h1 className="text-4xl font-bold">
-      <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-    </h1>
-  </header>
 
-  <div className="w-full flex flex-row gap-4">
-    <AirPollution airQuality={airQuality} className="w-96 h-40"/>
-   <CurrentWeather data={sampleWeatherData} city={sampleCity}/>
-   <Sun sun={sampleCity}/>
-   <Feel feel={sampleWeatherData}/>
-  </div>
+  return (
+    <div
+      className={`min-h-screen flex flex-col py-10 px-10 transition-all duration-500 ${
+        darkMode ? "bg-gray-900 text-white" : "bg-white text-black"
+      }`}
+    >
+      <header className="mb-8">
+        <h1 className="text-4xl font-bold">
+          <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+        </h1>
+      </header>
+
+      <div className="w-full flex flex-wrap gap-4">
+  {weather && (
+    <>
+      <CurrentWeather data={weather.hourly} city={weather.city} />
+      <WeatherWidgets
+        data={weather.hourly}
+        city={weather.city}
+        airQuality={weather.air}
+        uvIndexForToday={weather.uv.uv_index_max}
+      />
+    </>
+  )}
 </div>
 
+    </div>
   );
 }
