@@ -3,6 +3,8 @@ export type WeatherResponse = {
   hourly: HourlyForecastData
   air: AirQualityData
   uv: UV
+  tenDay: TenDayForecastData
+  forecast: ForecastData
 }
 
 export type City = {
@@ -75,4 +77,31 @@ export type AirQualityData = {
 
 export type UV = {
   uv_index_max: number
+}
+
+
+
+export type ForecastData = {
+  dt: number
+  sunrise: number
+  sunset: number
+  temp: HourlyForecastData
+  feels_like: HourlyForecastData
+  pressure: number
+  humidity: number
+  weather: City[]
+  speed: number
+  deg: number
+  gust: number
+  clouds: number
+  pop: number
+  rain?: number
+}
+
+export type TenDayForecastData = {
+  city: City
+  cod: string
+  message: number
+  cnt: number
+  list: ForecastData[]
 }

@@ -26,8 +26,8 @@ export default function WeatherWidgets({
 }: WeatherWidgetsProps) {
   return (
     <>
-      <AirPollution airQuality={airQuality} className="order-2 md:order-1" />
-      <Card className="order-3 flex h-48 flex-col justify-between lg:order-2">
+      <AirPollution airQuality={airQuality} className="order-2 md:order-1 w-80 h-52" />
+      <Card className="order-3 flex w-52 h-52 flex-col justify-between lg:order-2">
         <CardHeader>
           <CardTitle>
             <i>
@@ -72,7 +72,7 @@ export default function WeatherWidgets({
           <p>Sunrise: {formatSunTimeWithAMPM(city.sunrise, city.timezone)}</p>
         </CardFooter>
       </Card>
-      <Card className="order-4 h-48 xl:order-3">
+      <Card className="order-4 w-52 h-52 xl:order-3">
         <CardHeader>
           <CardTitle>
             <i>
@@ -113,7 +113,7 @@ export default function WeatherWidgets({
           <Compass speed={data.wind.speed} deg={data.wind.deg} />
         </CardContent>
       </Card>
-      <Card className="order-5 flex h-48 flex-col justify-between">
+      <Card className="order-5 flex w-52 h-52 flex-col justify-between">
         <CardHeader>
           <CardTitle>
             <i>
@@ -141,7 +141,7 @@ export default function WeatherWidgets({
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <p className="mb-2">
+          <p className="mb-1">
             {Math.round(uvIndexForToday)}
             <br></br>
             {uvIndexForToday <= 2
@@ -164,7 +164,7 @@ export default function WeatherWidgets({
           </p>
         </CardFooter>
       </Card>
-      <Card className="order-6 flex h-48 flex-col justify-between">
+      <Card className="order-6 flex w-52 h-52 flex-col justify-between">
         <CardHeader>
           <CardTitle>
             <i>
@@ -256,7 +256,7 @@ export default function WeatherWidgets({
           </p>
         </CardFooter>
       </Card>
-      <Card className="order-7 flex h-48 flex-col justify-between">
+      <Card className="order-7 flex w-52 h-52 flex-col justify-between">
         <CardHeader>
           <CardTitle>
             <i>
@@ -289,7 +289,7 @@ export default function WeatherWidgets({
           </p>
         </CardFooter>
       </Card>
-      <Card className="order-8 flex h-48 flex-col justify-between">
+      <Card className="order-8 flex w-52 h-52 flex-col justify-between">
         <CardHeader>
           <CardTitle>
             <i>
@@ -322,7 +322,7 @@ export default function WeatherWidgets({
           </p>
         </CardFooter>
       </Card>
-      <Card className="order-9 flex h-48 flex-col justify-between">
+      <Card className="order-9 flex w-52 h-52 flex-col justify-between">
         <CardHeader>
           <CardTitle>
             <i>
@@ -359,7 +359,7 @@ export default function WeatherWidgets({
           </p>
         </CardFooter>
       </Card>
-      <Card className="order-10 flex h-48 flex-col justify-between">
+      <Card className="order-10 flex w-52 h-52 flex-col justify-between">
         <CardHeader>
           <CardTitle>
             <i>

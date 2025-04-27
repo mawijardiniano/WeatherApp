@@ -2,17 +2,15 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Header from "@/app/components/header";
-import AirPollution from "@/app/components/widget/airPollution";
-import Sun from "@/app/components/widget/sun";
-import Feel from "@/app/components/widget/feelLike";
-import Humidity from "@/app/components/widget/humidity";
 import WeatherWidgets from "@/app/components/widget/weatherWidget";
 import CurrentWeather from "@/app/components/widget/currentWeather";
-import { City, HourlyForecastData, AirQualityData , WeatherResponse } from "@/lib/types";
+import TenDayForecast from "@/app/components/widget/tenDayForecast";
+import { City, HourlyForecastData, AirQualityData , WeatherResponse, ForecastData } from "@/lib/types";
 
 export default function Dashboard() {
   const [city, setCity] = useState("Boac");
   const [weather, setWeather] = useState<WeatherResponse | null>(null);
+  const [forecast, setForecast] = useState<ForecastData[]>([]);
   const [loading, setLoading] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
 
@@ -24,6 +22,7 @@ export default function Dashboard() {
       );
   
       const data = response.data;
+      console.log(data);
   
       const weatherData: WeatherResponse = {
         city: {
@@ -35,7 +34,7 @@ export default function Dashboard() {
           sunrise: data.current.sys.sunrise,
           sunset: data.current.sys.sunset,
         },
-        hourly: data.forecast.list[0], // 👈 pick the first hour or map through the list
+        hourly: data.forecast.list[0],
         air: {
           dt: data.air_pollution.list[0].dt,
           main: data.air_pollution.list[0].main,
@@ -43,13 +42,20 @@ export default function Dashboard() {
         },
         uv: {
           uv_index_max: data.uv_index.daily.uv_index_max[0],
-        }
+        },
+        // Adding the missing fields
+        tenDay: data.forecast.list.slice(0, 10),
+        forecast: data.forecast, 
       };
   
       setWeather(weatherData);
+      setForecast(data); 
+      console.log(weatherData);
+      console.log("forecast", data.forecast.list)
     } catch (error) {
       console.error("Error fetching weather data:", error);
       setWeather(null);
+      setForecast([]); 
     } finally {
       setLoading(false);
     }
@@ -67,7 +73,7 @@ export default function Dashboard() {
 
   return (
     <div
-      className={`min-h-screen flex flex-col py-10 px-10 transition-all duration-500 ${
+      className={`min-h-screen flex flex-col py-10 px-20 transition-all duration-500 ${
         darkMode ? "bg-gray-900 text-white" : "bg-white text-black"
       }`}
     >
@@ -78,17 +84,25 @@ export default function Dashboard() {
       </header>
 
       <div className="w-full flex flex-wrap gap-4">
-  {weather && (
-    <>
+      {weather && weather.hourly && weather.tenDay ? (
+  <div className="flex flex-row gap-4">
+    <div>
       <CurrentWeather data={weather.hourly} city={weather.city} />
+      {/* <TenDayForecast data={weather.tenDay} /> */}
+    </div>
+    <div className="flex flex-wrap gap-4">
       <WeatherWidgets
         data={weather.hourly}
         city={weather.city}
         airQuality={weather.air}
         uvIndexForToday={weather.uv.uv_index_max}
       />
-    </>
-  )}
+    </div>
+  </div>
+) : (
+  <div>Loading...</div> // Show a loading state until data is available
+)}
+
 </div>
 
     </div>
