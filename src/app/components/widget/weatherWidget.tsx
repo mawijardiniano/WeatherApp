@@ -26,7 +26,7 @@ export default function WeatherWidgets({
 }: WeatherWidgetsProps) {
   return (
     <>
-      <AirPollution airQuality={airQuality} className="order-2 md:order-1 w-80 h-52" />
+      <AirPollution airQuality={airQuality} className="order-2 md:order-1 w-96 h-52" />
       <Card className="order-3 flex w-52 h-52 flex-col justify-between lg:order-2">
         <CardHeader>
           <CardTitle>
@@ -113,7 +113,7 @@ export default function WeatherWidgets({
           <Compass speed={data.wind.speed} deg={data.wind.deg} />
         </CardContent>
       </Card>
-      <Card className="order-5 flex w-52 h-52 flex-col justify-between">
+      <Card className="order-5 flex w-96 h-52 flex-col justify-between">
         <CardHeader>
           <CardTitle>
             <i>
@@ -289,7 +289,7 @@ export default function WeatherWidgets({
           </p>
         </CardFooter>
       </Card>
-      <Card className="order-8 flex w-52 h-52 flex-col justify-between">
+      <Card className="order-8 flex w-72 h-52 flex-col justify-between">
         <CardHeader>
           <CardTitle>
             <i>
@@ -322,7 +322,7 @@ export default function WeatherWidgets({
           </p>
         </CardFooter>
       </Card>
-      <Card className="order-9 flex w-52 h-52 flex-col justify-between">
+      <Card className="order-9 flex w-64 h-52 flex-col justify-between">
         <CardHeader>
           <CardTitle>
             <i>
@@ -359,7 +359,7 @@ export default function WeatherWidgets({
           </p>
         </CardFooter>
       </Card>
-      <Card className="order-10 flex w-52 h-52 flex-col justify-between">
+      <Card className="order-10 flex w-64 h-52 flex-col justify-between">
         <CardHeader>
           <CardTitle>
             <i>

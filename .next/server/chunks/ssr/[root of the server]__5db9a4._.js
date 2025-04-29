@@ -3115,9 +3115,9 @@ function Dashboard() {
                 forecast: data.forecast
             };
             setWeather(weatherData);
-            setForecast(data);
+            setForecast(data.forecast.list.slice(0, 10));
             console.log(weatherData);
-            console.log("forecast", data.forecast.list);
+            console.log("forecast", data.forecast.list.slice(0, 10));
         } catch (error) {
             console.error("Error fetching weather data:", error);
             setWeather(null);
@@ -3161,53 +3161,64 @@ function Dashboard() {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "w-full flex flex-wrap gap-4",
-                children: weather && weather.hourly && weather.tenDay ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex flex-row gap-4",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$widget$2f$currentWeather$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                data: weather.hourly,
-                                city: weather.city
+                children: [
+                    weather && weather.hourly && weather.tenDay ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex flex-row gap-4",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$widget$2f$currentWeather$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                    data: weather.hourly,
+                                    city: weather.city
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
+                                    lineNumber: 90,
+                                    columnNumber: 7
+                                }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
-                                lineNumber: 90,
-                                columnNumber: 7
-                            }, this)
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
-                            lineNumber: 89,
-                            columnNumber: 5
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex flex-wrap gap-4",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$widget$2f$weatherWidget$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                data: weather.hourly,
-                                city: weather.city,
-                                airQuality: weather.air,
-                                uvIndexForToday: weather.uv.uv_index_max
+                                lineNumber: 89,
+                                columnNumber: 5
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex flex-wrap gap-4",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$widget$2f$weatherWidget$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                    data: weather.hourly,
+                                    city: weather.city,
+                                    airQuality: weather.air,
+                                    uvIndexForToday: weather.uv.uv_index_max
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
+                                    lineNumber: 94,
+                                    columnNumber: 7
+                                }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
-                                lineNumber: 94,
-                                columnNumber: 7
+                                lineNumber: 93,
+                                columnNumber: 5
                             }, this)
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
-                            lineNumber: 93,
-                            columnNumber: 5
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
-                    lineNumber: 88,
-                    columnNumber: 3
-                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    children: "Loading..."
-                }, void 0, false, {
-                    fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
-                    lineNumber: 103,
-                    columnNumber: 3
-                }, this) // Show a loading state until data is available
-            }, void 0, false, {
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
+                        lineNumber: 88,
+                        columnNumber: 3
+                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        children: "Loading..."
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
+                        lineNumber: 103,
+                        columnNumber: 3
+                    }, this),
+                    forecast ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {}, void 0, false, {
+                        fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
+                        lineNumber: 107,
+                        columnNumber: 3
+                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {}, void 0, false, {
+                        fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
+                        lineNumber: 111,
+                        columnNumber: 3
+                    }, this)
+                ]
+            }, void 0, true, {
                 fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
                 lineNumber: 86,
                 columnNumber: 7

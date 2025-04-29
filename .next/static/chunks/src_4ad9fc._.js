@@ -3055,6 +3055,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$header$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/components/header.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$widget$2f$weatherWidget$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/components/widget/weatherWidget.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$widget$2f$currentWeather$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/components/widget/currentWeather.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/axios/lib/axios.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_refresh__.signature();
@@ -3064,11 +3065,13 @@ var _s = __turbopack_refresh__.signature();
 ;
 ;
 ;
+;
 function Dashboard() {
     _s();
+    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     const [city, setCity] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("Boac");
     const [weather, setWeather] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
-    const [forecast, setForecast] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [forecast, setForecast] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [darkMode, setDarkMode] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const getWeather = async (cityName)=>{
@@ -3096,18 +3099,17 @@ function Dashboard() {
                 uv: {
                     uv_index_max: data.uv_index.daily.uv_index_max[0]
                 },
-                // Adding the missing fields
                 tenDay: data.forecast.list.slice(0, 10),
                 forecast: data.forecast
             };
             setWeather(weatherData);
-            setForecast(data);
+            setForecast(data.forecast);
             console.log(weatherData);
-            console.log("forecast", data.forecast.list);
+            console.log("forecast", data.forecast);
         } catch (error) {
             console.error("Error fetching weather data:", error);
             setWeather(null);
-            setForecast([]);
+            setForecast(null);
         } finally{
             setLoading(false);
         }
@@ -3134,17 +3136,17 @@ function Dashboard() {
                         toggleDarkMode: toggleDarkMode
                     }, void 0, false, {
                         fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
-                        lineNumber: 82,
+                        lineNumber: 88,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
-                    lineNumber: 81,
+                    lineNumber: 87,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
-                lineNumber: 80,
+                lineNumber: 86,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3158,13 +3160,13 @@ function Dashboard() {
                                 city: weather.city
                             }, void 0, false, {
                                 fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
-                                lineNumber: 90,
-                                columnNumber: 7
+                                lineNumber: 96,
+                                columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
-                            lineNumber: 89,
-                            columnNumber: 5
+                            lineNumber: 95,
+                            columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "flex flex-wrap gap-4",
@@ -3175,39 +3177,41 @@ function Dashboard() {
                                 uvIndexForToday: weather.uv.uv_index_max
                             }, void 0, false, {
                                 fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
-                                lineNumber: 94,
-                                columnNumber: 7
+                                lineNumber: 100,
+                                columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
-                            lineNumber: 93,
-                            columnNumber: 5
+                            lineNumber: 99,
+                            columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
-                    lineNumber: 88,
-                    columnNumber: 3
-                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    children: "Loading..."
-                }, void 0, false, {
+                    lineNumber: 94,
+                    columnNumber: 11
+                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {}, void 0, false, {
                     fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
-                    lineNumber: 103,
-                    columnNumber: 3
-                }, this) // Show a loading state until data is available
+                    lineNumber: 109,
+                    columnNumber: 11
+                }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
-                lineNumber: 86,
+                lineNumber: 92,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/(pages)/dashboard/page.tsx",
-        lineNumber: 75,
+        lineNumber: 81,
         columnNumber: 5
     }, this);
 }
-_s(Dashboard, "EGNCJ6RQYreap1EvmH1PqSEjhYw=");
+_s(Dashboard, "XB3B5n1GhiMV7jCdC4o8BXe9iPM=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
+    ];
+});
 _c = Dashboard;
 var _c;
 __turbopack_refresh__.register(_c, "Dashboard");
