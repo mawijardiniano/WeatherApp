@@ -18,10 +18,17 @@ import { useRouter } from "next/navigation";
 export default function Dashboard() {
   const router = useRouter();
   const [city, setCity] = useState("Boac");
+  const [searchInput, setSearchInput] = useState("");
   const [weather, setWeather] = useState<WeatherResponse | null>(null);
   const [forecast, setForecast] = useState<TenDayForecastData | null>(null);
   const [loading, setLoading] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
+
+  const handleSearch = () => {
+    if (searchInput.trim()) {
+      setCity(searchInput.trim());
+    }
+  };
 
   const getWeather = async (cityName: string) => {
     setLoading(true);
@@ -85,11 +92,17 @@ export default function Dashboard() {
     >
       <header className="mb-8">
         <h1 className="text-4xl font-bold">
-          <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+        <Header
+        toggleDarkMode={toggleDarkMode}
+        darkMode={darkMode}
+        searchInput={searchInput}
+        setSearchInput={setSearchInput}
+        onSearch={handleSearch}
+      />
         </h1>
       </header>
 
-      <div className="w-full flex flex-wrap gap-4 px-20">
+      <div className="w-full flex flex-wrap gap-4 px-32">
         {weather && weather.hourly && weather.tenDay ? (
           <div className="flex flex-row gap-4">
             <div className="">
